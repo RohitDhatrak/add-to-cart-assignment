@@ -45,7 +45,7 @@ export function Cart() {
                     ))}
                 </Flex>
             </Box>
-            <Invoice />
+            {!!cart.length && <Invoice />}
         </Flex>
     );
 }
