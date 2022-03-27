@@ -7,7 +7,12 @@ export function Cart() {
     const { cart, saveForLater } = useAppContext();
 
     return (
-        <Flex as="main" p="1em 5em" justifyContent="space-between">
+        <Flex
+            as="main"
+            p="1em 2em"
+            justifyContent="space-between"
+            direction={{ base: "column", md: "row" }}
+        >
             <Box>
                 <Heading as="h1" size="md">
                     {`Cart (${cart.length} items)`}
